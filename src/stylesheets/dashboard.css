@@ -72,3 +72,21 @@ h2 {
     border-radius: 1rem;
     margin-top: 0.5%;
 }
+
+.buttonWrapper button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.nameWrapper {
+    position: relative;
+    margin-top: -25%;
+    margin-left: 0.5%;
+}
+
+.name {
+    position: absolute;
+    text-align: left;
+    justify-content: left;
+    z-index: 10;
+}

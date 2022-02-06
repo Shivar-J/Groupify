@@ -11,7 +11,7 @@ import {
 import ScrollToTop from "react-scroll-to-top";
 import '../stylesheets/styles.css';
 
-const StickyFade = batch(Sticky(), Fade(), MoveOut(0, -200));
+const StickyFade = batch(Sticky(), Fade(), MoveOut(0, -500));
 
 export default class Home extends React.Component {
     render() {
@@ -20,7 +20,9 @@ export default class Home extends React.Component {
                 <ScrollContainer>
                     <ScrollPage page={0}>
                         <Animator animation={StickyFade}>
-                            <h1 className="big">Welcome to Groupify</h1>
+                            <h1>Welcome to Groupify.</h1>
+                            <h1>A Spotify account is required!</h1>
+                            <h1>Click the Login button to get started.</h1>
                         </Animator>
                     </ScrollPage>
                     <ScrollPage page={1}>
@@ -30,12 +32,11 @@ export default class Home extends React.Component {
                     </ScrollPage>
                     <ScrollPage page={2}>
                         <Animator animation={StickyFade}>
-                            <h1>Groupify uses Spotify API to allow users to create and join rooms where they can listen to music together.</h1>
+                            <h1>Groupify uses Spotify API to sync users' accounts to play the same music. Users can create and join rooms where they can listen to music together.</h1>
                         </Animator>
                     </ScrollPage>
                 </ScrollContainer>
                 <ScrollToTop smooth />
-                <p>▲</p>
             </div>
             
             

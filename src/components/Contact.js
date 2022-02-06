@@ -20,12 +20,6 @@ export default class Contact extends React.Component {
                 <ScrollContainer>
                     <ScrollPage page={0}>
                         <Animator animation={StickyFade}>
-                            <h1>Contact Us</h1>
-                            <h1>↓↓↓↓↓↓↓↓↓↓↓</h1>
-                        </Animator>
-                    </ScrollPage>
-                    <ScrollPage page={1}>
-                        <Animator animation={StickyFade}>
                             <h1>Shivar - sbshivar@gmail.com</h1>
                             <h1>Brian - brianchan818@gmail.com</h1>
                             <h1>Riken - riken.allen.business@gmail.com</h1>

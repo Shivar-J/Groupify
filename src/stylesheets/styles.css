@@ -5,9 +5,22 @@
     font-family: 'Roboto Mono', monospace;
     color: #000000;
 }
+.noDecText {
+    text-decoration: none;
+}
 
 .offset {
     margin-top: 2%;
+    background-color: #FFFFFF;
+}
+
+.header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 0.6%;
+    background-color: #D3D3D3;
 }
 
 .big {
@@ -22,13 +35,12 @@ span {
 
 .logo {
     max-width: 2.5%;
-    position:fixed;
-    top: 1.35%;
-    left: 1%;
+    position: relative;
+    top: 10px;
+    left: 0%;
 }
 
 .aa1 {
-    left: 2%;
     position: relative;
     text-decoration: none;
     display: inline;
@@ -40,10 +52,10 @@ span {
 .aa1:hover {
     opacity: 0.5;
     cursor: pointer;
+    color: green;
 }
 
 .aa2 {
-    left: 1.75%;
     position: relative;
     text-decoration: none;
     display: inline;
@@ -55,6 +67,7 @@ span {
 .aa2:hover {
     opacity: 0.5;
     cursor: pointer;
+    color: green;
 }
 
 .topButton {
@@ -72,4 +85,45 @@ span {
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 8px;
+}
+
+
+.loginbutton {
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    border-radius: 50px;
+    background: #1DB954;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 20%;
+    height: 8%;
+    font-size: 1.5vw;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+    border: 2px solid #4CAF50; /* Green */
+    box-shadow: 6px 6px 5px -2px black;
+}
+
+.getStarted {
+    position: relative;
+    top: 0.5vw;
+    left: 50vw;
+    border-radius: 50px;
+    background: #1DB954;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 20%;
+    height: 8%;
+    font-size: 1.5vw;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+    border: 2px solid #4CAF50; /* Green */
+    box-shadow: 6px 6px 5px -2px black;
+}
+
+.loginbutton:hover {
+    
 }
