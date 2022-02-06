@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Groupify was created for UofTHack IX by Shivar, Robby, Riken, and Brian
+## Link to Backend code
+[Backend](https://github.com/Shivar-J/Groupify/tree/Backend).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Inspiration
+Covid was a hard time for all of us, many had to find new ways to cope with all of the new stress and anxiety. And thus came music. Being able to listen to music together is especially important during a time where you weren’t able to see your closest friends. 
 
-## Available Scripts
+Prior to the competition, our group had tried to do a Spotify group session, and realised that the system had gone downhill. Users could spam skipping songs and bug out the session. It was overall a bad experience. 
 
-In the project directory, you can run:
+And so, after hearing about the theme, Groupify was born! An easier way to listen to songs with your friends. We aim to bring back the feeling of laughing at your friend's favourite song, and forcing them to listen to your music because you clearly have a superior taste in music.
 
-### `npm start`
+# What it does
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Groupify lets users join listening rooms with your friends. Everybody’s spotify account is synced together so you can all listen to the same music track. Users can play, skip, and seek through songs with their peers. Groupify is a great way to introduce new music to your friends and build connections through music. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# How we built it
 
-### `npm test`
+Groupify was built as a website to maximise compatibility with all devices. We decided to use React for our frontend and Flask for our backend. We used React for our frontend because it was an opportunity to learn new JavaScript libraries. We used the react-scroll-motion library to add some scrolling animations and spice up our page. For our login page we used the information we collected from Spotify’s API to handle which user is logged in and using the program. We then got their current song and displayed it on the dashboard and shared it to the other users in the group. On the backend we used Flask to access and call Spotify’s API and collect and send data. We used websockets to handle sharing song data and its timestamp to other users. Overall this project was a very engaging and challenging one and allowed us to learn and improve our skills.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Challenges we ran into
 
-### `npm run build`
+When we first started out, looking at it simply we would just need to use Spotify’s WebSocket API to see when the user changes their song. We had seen an example of this from Discord, and how they were able to track what you were listening to. However, Spotify only provides its WebSocket API to authorised developers. Therefore forcing us to find a way to get a constantly updated version of our users currently playing tracks, to keep them synced with the rest of the people in a room. We were able to overcome this challenge by polling Spotify's free user’s playbackstate endpoint. This isn’t the most elegant solution but it allows us to bypass the unnecessary restrictions and restore group sessions to their former glory. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Accomplishments that we're proud of
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Building the music player
+The accuracy of the sync between peers
+We learned so much in such a short time, and are glad that it was possible for us to participate in such a great opportunity. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## What we learned
+Our group learned more about React, Flask, and coding backends. We were able to add animations to our website, which was a first. 
 
-### `npm run eject`
+# What's next for Groupify
+Our next step for Groupify is to add the functionality for multiple rooms. Currently, we only have one room available and it’s public for all to join. We want to add functionality for multiple rooms and private rooms that are accessed by secret room codes. This will be a major step towards setting Groupify up for public use.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
