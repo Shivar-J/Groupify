@@ -3,6 +3,15 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
+    color: #000000;
+}
+
+.offset {
+    margin-top: 2%;
+}
+
+.big {
+    font-size: 2rem;
 }
 
 span {
@@ -11,9 +20,16 @@ span {
     left: 25px;
 }
 
-.a1 {
+.logo {
+    max-width: 2.5%;
+    position:fixed;
+    top: 1.35%;
+    left: 1%;
+}
+
+.aa1 {
+    left: 2%;
     position: relative;
-    color: black;
     text-decoration: none;
     display: inline;
     padding-left: 20px;
@@ -21,17 +37,39 @@ span {
     font-size: 2rem;
 }
 
-.a1:hover {
+.aa1:hover {
     opacity: 0.5;
     cursor: pointer;
 }
 
-.a2 {
+.aa2 {
+    left: 1.75%;
     position: relative;
-    color: black;
     text-decoration: none;
     display: inline;
     padding-left: 20px;
     padding-right: 10px;
     font-size: 1.5rem;
+}
+
+.aa2:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.topButton {
+    position: fixed;
+    top: 92%;
+    right: 1%;
+    background-color: turquoise;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
 }

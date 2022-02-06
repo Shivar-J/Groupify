@@ -10,14 +10,17 @@ import {
 export default class NotFound extends React.Component {
     render() {
         return (
-            <ScrollContainer>
-                <ScrollPage page={0}>
-                    <Animator animation={Sticky()}>
-                        <div>404 Page not Found</div>
-                        <a href="/">Go Back</a>
-                    </Animator>
-                </ScrollPage>
-            </ScrollContainer>
+            <div className='offset'>
+                <ScrollContainer>
+                    <ScrollPage page={0}>
+                        <Animator animation={Sticky()}>
+                            <div>404 Page not Found</div>
+                            <a href="/">Go Back</a>
+                        </Animator>
+                    </ScrollPage>
+                </ScrollContainer>
+            </div>
+            
         )
     }
 }

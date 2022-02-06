@@ -7,7 +7,8 @@ import NotFound from './components/NotFound';
 import Contact from './components/Contact';
 import Header from './components/Header';
 import Login from './components/Login';
-import Register from './components/Register'
+import Dashboard from './components/Dashboard';
+import Callback from './components/callback'; 
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,7 +18,8 @@ ReactDOM.render(
         <Route index element={<Home />}/>
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/Register" element={<Register />} />
+        <Route path="/callback" element={<Callback />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
