@@ -31,5 +31,5 @@ We learned so much in such a short time, and are glad that it was possible for u
 Our group learned more about React, Flask, and coding backends. We were able to add animations to our website, which was a first. 
 
 # What's next for Groupify
-Our next step for Groupify is to add the functionality for multiple rooms. Currently, we only have one room available and it’s public for all to join. We want to add functionality for multiple rooms and private rooms that are accessed by secret room codes. This will be a major step towards setting Groupify up for public use.
+Our next step for Groupify is to add the functionality for multiple rooms. Currently, we only have one room available and it’s public for all to join. We want to add functionality for multiple rooms and private rooms that are accessed by secret room codes. This will be a major step towards setting Groupify up for public use. 
 
